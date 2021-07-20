@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+     margin: 26px; 
+    border-radius: 50px;
+
+
+    
+}
+.blog{
+    
+    margin: 30px;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    width: 330px;
+    height: 600px;
+    
+    
+    
+}
+.blog .thumbnail img{
+    width: 300px;
+    height: 256px;
+    padding-left: 15px ;
+    padding-right: 15px ;
+    padding-top: 15px ;
+    border-radius: 15px;
+    
+}
+.blog-info p{
+ width: 300px;
+ height: 150px;
+ color: #6c6c6c;
+ font-size: 16px;
+ text-align: justify;
+ padding-left: 5px;
+}
+h3{
+    color: #18191F;
+    font-size: 28px;
+    
+    padding-left: 15px;
+}
+
+
+.footer img{
+    width: 483.87px;
+height: 110px;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+.social-icon{
+    display: flex;
+     
+
+     justify-content: center; 
+    
+}
+.social-icon img{
+    height: 32px;
+    width: 40px;
+    margin: 14px;
+    
+    
+    
+}
+.copy-right{
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content:center ;
+
+    
+}
+.top-banner img{
+    height: 400px;
+    width: 400px;
+    padding-top:100px ;
+    
+        
+}
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    width: 485px;
+height: 230px;
+color: white;
+
+}
+.button{
+    background-color: #E02C6D;
+    width: 150px;
+    height: 44px;
+    border-radius: 3px;
+    
+
+}
+.button p{
+    font-size: 20px;
+    padding: 7px;
+    color: white;
+}
+.top{
+    display: flex;
+    background-color: #2D25A0;
+    
+}
+.top-heading{
+    margin: 120px;
+
+}
+.top-banner:hover img{
+    
+     transform: scale(1.2) rotate(360deg);
+    transition: transform 3s ease-in-out;
+}
+.stage{
+    height: 500px;
+    
+    background-color: white;
+}
+.ball{
+    height: 200px;
+    width: 200px;
+    background-color:rgb(161, 22, 22);
+    border-radius: 50%;
+    animation: sliding 3s ease-in-out 0.3s infinite ;
+    animation-play-state: running;
+    position: relative;
+    ;
+}
+@keyframes sliding{
+    0%{
+        background-color: greenyellow;
+        left:0px;
+        top:0;
+        transform: scale(0.2);
+    }
+    50%{
+         top: 250px;
+         background-color: brown;
+         transform: scale(0.5);
+         
+    }
+    100%{
+        background-color: greenyellow;
+        top: 0;
+         left: 1000px;
+    }
+}
+td,th{
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+table{
+    border-collapse: collapse;
+    
+    
+}
+.table{
+    justify-content: center;
+    display: flex;
+    
+
+}
+@media only screen and (max-width:688px)
+{
+    .container{
+        width: 100%;
+
+        
+    }
+    .top{
+        flex-direction: column;
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        width: 100%;
+    }
+}
+ @media only screen and (min-width:688px) and (max-width:992px){
+     .blogs{
+         grid-template-columns: repeat(1,1fr);
+         margin-left: auto;
+       margin-right: auto;
+         width: 50%;
+         
+         
+
+         
+     }
+     .top{
+         flex-direction: column;
+         margin-left: auto;
+        margin-right: auto;
+         width: 50%;
+        
+         
+     }
+     
+     h1{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        width: 100%;
+     }
+ }
+     
+    
+
+
+    
+    
+
+
+
